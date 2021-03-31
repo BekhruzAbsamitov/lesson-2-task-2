@@ -8,9 +8,14 @@ import uz.pdp.lesson2task2.entity.Product;
 @Projection(types = Product.class)
 public interface CustomProduct {
     Integer getId();
+
     String getName();
+
     String getDescription();
+
     Category getCategory();
+
     Double getPrice();
+
     Attachment getPhoto();
 }
