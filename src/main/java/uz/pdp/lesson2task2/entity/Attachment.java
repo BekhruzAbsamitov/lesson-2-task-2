@@ -19,6 +19,8 @@ public class Attachment {
     @Column(nullable = false)
     private String name;
 
+    private byte[] bytes;
+
     @Column(nullable = false)
     private Long size;
 

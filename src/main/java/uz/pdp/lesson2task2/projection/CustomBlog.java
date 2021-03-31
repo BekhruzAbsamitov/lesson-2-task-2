@@ -12,5 +12,5 @@ public interface CustomBlog {
 
     String getTitle();
 
-    Attachment getPhoto();
+    Integer getPhoto();
 }

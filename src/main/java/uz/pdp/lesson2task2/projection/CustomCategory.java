@@ -8,10 +8,14 @@ import uz.pdp.lesson2task2.entity.Category;
 public interface CustomCategory {
 
     Integer getId();
+
     String getName();
+
     String getDescription();
-    Category getParentCategory();
-    Attachment getAttachment();
+
+    Integer getParentCategory();
+
+    Integer getAttachment();
 
 
 }

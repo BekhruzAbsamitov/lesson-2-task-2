@@ -8,9 +8,14 @@ import uz.pdp.lesson2task2.entity.User;
 public interface CustomUser {
 
     Integer getId();
+
     String getFirstName();
+
     String getLastName();
+
     String getEmail();
+
     String getPhoneNumber();
-    Attachment getPhoto();
+
+    Integer getPhoto();
 }
