@@ -40,10 +40,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/api/product/*").hasAuthority(AUTHORITY.ADD_PRODUCT)
+                .antMatchers(HttpMethod.POST, "/api/product").hasAuthority(AUTHORITY.ADD_PRODUCT)
                 .antMatchers(HttpMethod.PUT, "/api/product/*").hasAuthority(AUTHORITY.EDIT_PRODUCT)
                 .antMatchers(HttpMethod.DELETE, "/api/product/*").hasAuthority(AUTHORITY.DELETE_PRODUCT)
-                .antMatchers(HttpMethod.GET, "/api/product/**").hasAuthority(AUTHORITY.READ_ALL_PRODUCT)
+                .antMatchers(HttpMethod.GET, "/api/product").hasAuthority(AUTHORITY.READ_ALL_PRODUCT)
                 .anyRequest()
                 .authenticated()
                 .and()
