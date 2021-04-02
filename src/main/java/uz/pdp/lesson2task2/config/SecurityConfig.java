@@ -31,7 +31,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .roles(ROLE.MODERATOR).authorities(AUTHORITY.ADD_PRODUCT, AUTHORITY.EDIT_PRODUCT, AUTHORITY.READ_ONE_PRODUCT, AUTHORITY.READ_ALL_PRODUCT)
                 .and()
                 .withUser("operator").password(passwordEncoder().encode("operator"))
-                .roles(ROLE.OPERATOR).authorities(AUTHORITY.DELETE_PRODUCT, AUTHORITY.READ_ONE_PRODUCT, AUTHORITY.READ_ALL_PRODUCT);
+                .roles(ROLE.OPERATOR).authorities(AUTHORITY.READ_ONE_PRODUCT, AUTHORITY.READ_ALL_PRODUCT);
     }
 
     @Override
